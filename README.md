@@ -14,3 +14,23 @@ Given a long article (news, Wikipedia, or blog), generate a shorter version that
   - Extractive summarization
   - Graph-based ranking
   - Abstractive summarization using Transformers
+
+
+## Dataset
+
+We use the CNN/DailyMail dataset, a large-scale news summarization benchmark.
+
+Each example contains:
+- A news article (hundreds of words)
+- A human-written summary (2–5 sentences)
+
+This makes summarization a supervised sequence-to-sequence learning problem.
+
+
+Summarization requires:
+- Understanding document meaning
+- Selecting important content
+- Removing redundancy
+- Generating fluent natural language
+
+Unlike sentiment or topic classification, the output is free-form text, making evaluation and learning significantly harder.
