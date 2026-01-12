@@ -34,3 +34,16 @@ Summarization requires:
 - Generating fluent natural language
 
 Unlike sentiment or topic classification, the output is free-form text, making evaluation and learning significantly harder.
+
+## Preprocessing Pipeline
+
+We perform sentence-level preprocessing:
+
+1. Sentence tokenization  
+2. Word tokenization  
+3. Stopword removal  
+4. Lemmatization  
+5. Cleaning (punctuation, numbers)
+
+This prepares each sentence as a unit for ranking and modeling in later summarization steps.
+
