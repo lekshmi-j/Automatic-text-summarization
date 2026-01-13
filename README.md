@@ -55,3 +55,11 @@ Sentences with higher TF-IDF scores contain more informative terms.
 Top-k highest scoring sentences are selected and arranged in their original order to form the summary.
 
 This approach preserves factual correctness since it uses original sentences.
+
+## Graph-Based Summarization (TextRank)
+
+We model sentences as nodes in a graph.
+Edges represent cosine similarity between sentences.
+
+A PageRank-style algorithm ranks sentences by how central they are in the similarity graph.
+Top-ranked sentences are selected as the summary.
