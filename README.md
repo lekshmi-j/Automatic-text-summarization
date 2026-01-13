@@ -47,3 +47,11 @@ We perform sentence-level preprocessing:
 
 This prepares each sentence as a unit for ranking and modeling in later summarization steps.
 
+## Extractive Summarization (Baseline)
+
+We use TF-IDF to score sentences based on word importance.
+Sentences with higher TF-IDF scores contain more informative terms.
+
+Top-k highest scoring sentences are selected and arranged in their original order to form the summary.
+
+This approach preserves factual correctness since it uses original sentences.
