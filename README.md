@@ -63,3 +63,10 @@ Edges represent cosine similarity between sentences.
 
 A PageRank-style algorithm ranks sentences by how central they are in the similarity graph.
 Top-ranked sentences are selected as the summary.
+
+## Abstractive Summarization
+
+We use the BART transformer model to generate summaries.
+The model uses an encoder–decoder architecture with attention to understand and rewrite the document.
+
+Since transformers have token limits, long documents are chunked and summarized piece-wise.
