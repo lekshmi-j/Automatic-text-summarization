@@ -70,3 +70,17 @@ We use the BART transformer model to generate summaries.
 The model uses an encoder–decoder architecture with attention to understand and rewrite the document.
 
 Since transformers have token limits, long documents are chunked and summarized piece-wise.
+
+## Evaluation & Comparison
+
+We compare extractive, graph-based, and abstractive summarization approaches
+using both automatic ROUGE metrics and qualitative analysis.
+
+| Method | ROUGE-1 | ROUGE-2 | ROUGE-L |
+|------|--------|--------|--------|
+| Extractive (TF-IDF) | ~0.15 | ~0.04 | ~0.11| 
+| Graph-Based (TextRank) | ~0.13 | ~0.00 | ~0.08 | 
+| Abstractive (BART) | ~0.18 | ~0.02 | ~0.12 | 
+
+While abstractive models score higher on ROUGE, extractive methods preserve
+factual correctness. Automatic metrics alone are insufficient to judge summary quality.
